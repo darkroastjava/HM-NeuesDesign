@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #182E33;
+}
+
+
+
+
+header {
+    width: 100%;
+    height: 120px;
+}
+
+.home-logo {
+    display: inline-block;
+    background-image: url('assets/happinessmanager_logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 512px;
+    height: 100px;
+    margin: 10px;
+    text-decoration: none;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.hero {
+    background-image: url('assets/Mavie_Work_-_Wieviel_Mittagspause_steht_mir_zu_2_-_Blog.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.hero-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 1em;
+    padding: 1.5em;
+    width: calc(50% - 2em);
+    background-color: #fcdcb590;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 50%;
+    margin: 0 0 1em 0;
+}
+
+.hero h1 b {
+    font-weight: 900;
+}
+
+.link-button {
+    display: inline-block;
+    border-width: 0;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    min-width: 250px;
+    padding: 18px 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    width: auto;
+    letter-spacing: 0.05em;
+    border: 1px solid #c78176;
+    line-height: 1;
+    text-align: center;
+}
+
+.call-to-action {
+    background-color: #ff8f00;
+    border-color: #ff8f00;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+section {
+    margin: 150px 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+section > * {
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0;
+}
+
+.one-col {
+    width: 8%;
+}
+
+.two-cols {
+    width: 16.66%;
+}
+
+.three-cols {
+    width: 25%;
+}
+
+.four-cols {
+    width: 33%;
+}
+
+.six-cols {
+    width: 50%;
+}
+
+.eight-cols {
+    width: 67%;
+}
+
+.nine-cols {
+    width: 75%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.tile {
+    display: block; /* Make the anchor a block element */
+    width: 100%; /* Set a dynamic width */
+    aspect-ratio: 1 / 1; /* Maintains 1:1 aspect ratio */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: 1px solid #cccccc; /* Optional border */
+    border-radius: 8px; /* Optional rounded corners */
+    transition: transform 0.3s; /* Smooth hover effect */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.tile:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.tile-image {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the tile while maintaining aspect ratio */
+}
+
+.tile-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around text */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    font-size: 18px;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 1em;
+    position: relative;
+    quotes: "«" "»";
+    text-indent: 1em;
+}
+
+blockquote + i {
+    text-align: right;
+    display: block;
+    margin-top:1em;
+    color: #aaa;
+}
+
+blockquote::before {
+    content: open-quote; /* Insert opening quote */
+    font-size: 2em; /* Larger size for the quotation mark */
+    position: absolute; /* Position absolutely */
+    left: -0.5em;
+    top: -0.5em; /* Adjust position */
+    color: #aaa; /* Color for the quote */
+}
+
+blockquote::after {
+    content: close-quote; /* Insert closing quote */
+    font-size: 2em; /* Larger size for the quotation mark */
+    position: absolute; /* Position absolutely */
+    right: -0.5em; /* Adjust position */
+    bottom: -0.5em; /* Adjust position */
+    color: #aaa; /* Color for the quote */
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.highlight {
+    background-color:#ff8f00;
+    padding: 50px 0;
+}
