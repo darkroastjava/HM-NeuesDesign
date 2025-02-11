@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -33,13 +38,19 @@ header {
 
 
 .hero {
-    background-image: url('assets/Mavie_Work_-_Wieviel_Mittagspause_steht_mir_zu_2_-_Blog.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: calc(100% - 100px);
 }
 
+.hero-hm {
+    background-image: url('assets/Mavie_Work_-_Wieviel_Mittagspause_steht_mir_zu_2_-_Blog.webp');
+}
+
+.hero-birkman {
+    background-image: url('assets/happy-team.png');
+}
 .hero-text {
     position: relative;
     top: 50%;
@@ -67,7 +78,7 @@ header {
     font-weight: 900;
 }
 
-.link-button {
+.link-button, .button {
     display: inline-block;
     border-width: 0;
     border-radius: 0px;
@@ -82,14 +93,20 @@ header {
     width: auto;
     letter-spacing: 0.05em;
     border: 1px solid #c78176;
+    background-color: #ffffff;
     line-height: 1;
     text-align: center;
 }
 
-.call-to-action {
+.call-to-action, .primary {
     background-color: #ff8f00;
     border-color: #ff8f00;
     color: #ffffff;
+}
+
+.highlight .primary {
+    background-color: #182e33;
+    border: none;
 }
 
 ul {
@@ -99,20 +116,22 @@ ul {
 
 section {
     margin: 150px 0;
+}
 
+section, .grid {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
 
-section > * {
+section > *, .grid > * {
     box-sizing: border-box;
     padding: 0 25px;
     margin: 0;
 }
 
 .one-col {
-    width: 8%;
+    width: 8.33%;
 }
 
 .two-cols {
@@ -124,7 +143,7 @@ section > * {
 }
 
 .four-cols {
-    width: 33%;
+    width: 33.33%;
 }
 
 .six-cols {
@@ -132,7 +151,7 @@ section > * {
 }
 
 .eight-cols {
-    width: 67%;
+    width: 66.66%;
 }
 
 .nine-cols {
@@ -221,4 +240,14 @@ blockquote::after {
 .highlight {
     background-color:#ff8f00;
     padding: 50px 0;
+}
+
+label {
+    font-size: 80%;
+}
+
+input, textarea {
+    padding: 0.3em;
+    margin: 0.3em 0 1em 0;
+    width: 100%;
 }
