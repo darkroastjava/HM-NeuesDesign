@@ -1,0 +1,67 @@
+/*
+Font: 		
+Style: 		
+URL: 		https://www.youworkforthem.com/font/T8378/molde
+Foundry: 	Letritas Foundry
+Foundry: 	https://www.youworkforthem.com/designer/830/letritas-foundry
+Copyright:	
+Version: 	17
+Created:	September 22, 2017
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'Molde';
+	src: url('fonts/molde-semicondensed-bold.eot');
+	src: url('fonts/molde-semicondensed-bold.eot?#iefix') format('embedded-opentype'),
+             url('fonts/molde-semicondensed-bold.woff2') format('woff2'),
+	     url('fonts/molde-semicondensed-bold.woff') format('woff'),
+	     url('fonts/molde-semicondensed-bold.ttf') format('truetype'),
+	     url('fonts/molde-semicondensed-bold.svg#youworkforthem') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Molde';
+	src: url('fonts/molde-semicondensed-bold-italic.eot');
+	src: url('fonts/molde-semicondensed-bold-italic.eot?#iefix') format('embedded-opentype'),
+             url('fonts/molde-semicondensed-bold-italic.woff2') format('woff2'),
+	     url('fonts/molde-semicondensed-bold-italic.woff') format('woff'),
+	     url('fonts/molde-semicondensed-bold-italic.ttf') format('truetype'),
+	     url('fonts/molde-semicondensed-bold-italic.svg#youworkforthem') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Molde';
+	src: url('fonts/molde-semicondensed-regular.eot');
+	src: url('fonts/molde-semicondensed-regular.eot?#iefix') format('embedded-opentype'),
+             url('fonts/molde-semicondensed-regular.woff2') format('woff2'),
+	     url('fonts/molde-semicondensed-regular.woff') format('woff'),
+	     url('fonts/molde-semicondensed-regular.ttf') format('truetype'),
+	     url('fonts/molde-semicondensed-regular.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Molde';
+	src: url('fonts/molde-semicondensed-regular-italic.eot');
+	src: url('fonts/molde-semicondensed-regular-italic.eot?#iefix') format('embedded-opentype'),
+             url('fonts/molde-semicondensed-regular-italic.woff2') format('woff2'),
+	     url('fonts/molde-semicondensed-regular-italic.woff') format('woff'),
+	     url('fonts/molde-semicondensed-regular-italic.ttf') format('truetype'),
+	     url('fonts/molde-semicondensed-regular-italic.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+body {
+    font-family: 'Molde', sans-serif;
+}
