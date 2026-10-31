@@ -62,7 +62,8 @@
     --section-gap: var(--space-8);
 
     --logo-height: 4rem;
-    --portrait-size: 12rem;
+    --testimonial-portrait-size: 12rem;
+    --contact-portrait-size: 12rem;
 
     --h1-size: 1.875rem;   --h1-lh: 2.25rem;
 
@@ -86,7 +87,8 @@
         --section-gap: var(--space-12);
 
         --logo-height: 6rem;
-        --portrait-size: 16rem;
+        --testimonial-portrait-size: 16rem;
+        --contact-portrait-size: 16rem;
 
         --h1-size: 2.25rem;   --h1-lh: 2.5rem;
 
@@ -341,10 +343,10 @@ h1 {
     gap: var(--section-gap);
 }
 
-.portrait {
+.testimonial-portrait {
     flex: none;
-    width: var(--portrait-size);
-    height: var(--portrait-size);
+    width: var(--testimonial-portrait-size);
+    height: var(--testimonial-portrait-size);
     object-fit: cover;
 }
 
@@ -414,8 +416,12 @@ h1 {
     text-align: center;
 }
 
-.contact-intro .portrait {
+.contact-portrait {
+    display: block;
+    width: var(--contact-portrait-size);
+    height: var(--contact-portrait-size);
     margin: 0 auto var(--space-6);
+    object-fit: cover;
 }
 
 .contact-lead {
@@ -471,6 +477,7 @@ h1 {
 
     .contact-layout {
         flex-direction: row;
+        align-items: stretch;
     }
 
     .contact-intro,
@@ -478,12 +485,38 @@ h1 {
         width: 50%;
     }
 
+    /* Die Höhe der Zeile bestimmt das Formular. Foto + Text liegen absolut
+       im Intro-Block, damit sie die Zeilenhöhe nicht beeinflussen. */
     .contact-intro {
+        position: relative;
+        container-type: inline-size;
         text-align: left;
     }
 
-    .contact-intro .portrait {
-        margin-inline: 0;
+    .contact-intro-inner {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Foto: quadratisch, so gross wie möglich (max. Spaltenbreite bzw.
+       Höhe abzüglich Text), linksbündig. */
+    .contact-portrait {
+        flex: 0 1 100cqw;
+        width: auto;
+        height: auto;
+        min-height: 0;
+        max-width: 100%;
+        aspect-ratio: 1;
+        margin: 0 0 var(--space-6);
+        align-self: flex-start;
+    }
+
+    .contact-lead,
+    .contact-signature {
+        flex: none;
     }
 
     .form-row {
