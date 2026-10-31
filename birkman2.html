@@ -14,105 +14,62 @@
     
     <link href="assets/molde.css" rel="stylesheet">
     
-    <!-- Tailwind CSS CDN -->
-    <script src="assets/saved_resource"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-dark': '#182E33',
-                        'brand-orange': '#ff8f00',
-                        'brand-peach': '#fcdcb5',
-                    },
-                    fontFamily: {
-                        sans: ['Molde', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        blockquote {
-            quotes: "«" "»";
-        }
-        
-        blockquote::before {
-            content: open-quote;
-        }
-        
-        blockquote::after {
-            content: close-quote;
-        }
-    </style>
-
-<style>
-*, ::before, ::after{
-    --tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Open Sans, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.-bottom-4{bottom:-1rem}.-left-2{left:-0.5rem}.-right-2{right:-0.5rem}.-top-2{top:-0.5rem}.m-4{margin:1rem}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-6{margin-left:1.5rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.h-16{height:4rem}.h-48{height:12rem}.h-full{height:100%}.min-h-\[80vh\]{min-height:80vh}.w-48{width:12rem}.w-auto{width:auto}.w-full{width:100%}.min-w-\[250px\]{min-width:250px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.resize-none{resize:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.gap-12{gap:3rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded-full{border-radius:9999px}.border-0{border-width:0px}.bg-brand-dark{--tw-bg-opacity:1;background-color:rgb(24 46 51 / var(--tw-bg-opacity, 1))}.bg-brand-orange{--tw-bg-opacity:1;background-color:rgb(255 143 0 / var(--tw-bg-opacity, 1))}.bg-brand-peach\/60{background-color:rgb(252 220 181 / 0.6)}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-cover{background-size:cover}.bg-center{background-position:center}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pl-6{padding-left:1.5rem}.pr-4{padding-right:1rem}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:Open Sans, sans-serif}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-wide{letter-spacing:0.025em}.text-brand-dark{--tw-text-opacity:1;color:rgb(24 46 51 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:brightness-110:hover{--tw-brightness:brightness(1.1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.hover\:brightness-125:hover{--tw-brightness:brightness(1.25);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-brand-dark:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(24 46 51 / var(--tw-ring-opacity, 1))}@media (min-width: 768px){.md\:m-8{margin:2rem}.md\:mx-0{margin-left:0px;margin-right:0px}.md\:ml-12{margin-left:3rem}.md\:h-24{height:6rem}.md\:h-64{height:16rem}.md\:min-h-\[70vh\]{min-height:70vh}.md\:w-1\/2{width:50%}.md\:w-64{width:16rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:gap-12{gap:3rem}.md\:p-10{padding:2.5rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-24{padding-top:6rem;padding-bottom:6rem}.md\:text-left{text-align:left}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}
-}
-</style>
+    <link href="style2.css" rel="stylesheet">
 </head>
-<body class="font-sans text-brand-dark text-lg">
+<body>
     
     <!-- Header -->
-    <header class="w-full py-4 px-4">
-        <div class="flex justify-center">
-            <a href="./birkman2.html">
-                <img src="./assets/happinessmanager_logo.png" alt="Happiness Manager Logo" class="h-16 md:h-24 w-auto">
-            </a>
-        </div>
+    <header class="site-header">
+        <a href="./birkman2.html">
+            <img src="./assets/happinessmanager_logo.png" alt="Happiness Manager Logo" class="site-logo">
+        </a>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="relative min-h-[80vh] md:min-h-[70vh] bg-cover bg-center flex items-center" style="background-image: url(&#39;assets/happy-team.png&#39;);">
-            <div class="bg-brand-peach/60 p-6 md:p-10 m-4 md:m-8 md:ml-12 max-w-2xl">
-                <h1 class="text-3xl md:text-4xl font-bold mb-4 text-brand-dark">
+        <section class="hero">
+            <div class="hero-panel">
+                <h1>
                     Persönlichkeits- und Team-Profile nach Birkman®
                 </h1>
-                <p class="mb-4 text-brand-dark leading-relaxed">
+                <p>
                     Arbeite effektiver und glücklicher mit deinem Team<br>
                     Erreiche Höchstleistung mit Freude &amp; Gelassenheit.<br>
                     Baue stärkere Beziehungen – im Job &amp; privat.
                 </p>
-                <p class="mb-6 text-brand-dark leading-relaxed">
+                <p>
                     Das Birkman-Profil zeigt dir, was dich antreibt, was du brauchst und wie du mit anderen optimal zusammenspielst – sei es im Unternehmen, im Sportteam oder in der Familie.
                 </p>
-                <a href="#kontakt" class="inline-block bg-brand-orange text-white px-6 py-4 font-semibold text-base md:text-lg tracking-wide text-center hover:brightness-110 transition-all min-w-[250px]">
+                <a href="#kontakt" class="cta-button">
                     Unverbindliche Anfrage
                 </a>
             </div>
         </section>
 
         <!-- Beschreibung Section -->
-        <section class="py-16 md:py-24 px-4 md:px-8">
-            <div class="max-w-4xl mx-auto">
-                <p class="mb-6 leading-relaxed">
+        <section class="section">
+            <div class="container prose flow">
+                <p>
                     Das Birkman®-Profil ist ein wissenschaftlich fundiertes Assessment, das dir hilft, deine Verhaltensweisen, Motivationen und Bedürfnisse zu erkennen. Es unterstützt dich dabei, effektiver zu kommunizieren, bessere Entscheidungen zu treffen und dein volles Potenzial auszuschöpfen.
                 </p>
                 
-                <p class="font-medium">Vorteile des Birkman®-Profils für:</p>
+                <p class="list-intro">Vorteile des Birkman®-Profils für:</p>
                 
-                <ul class="list-square ml-6 my-4">
-                    <li class="my-2"><strong>Führungskräfte:</strong> Optimierung des Führungsstils und Förderung der Mitarbeiterbindung.</li>
-                    <li class="my-2"><strong>Teams:</strong> Steigerung der Zusammenarbeit und Produktivität.</li>
-                    <li class="my-2"><strong>Einzelpersonen:</strong> Persönliches Wachstum und Klarheit über berufliche Ziele.</li>
+                <ul class="list-bulleted">
+                    <li><strong>Führungskräfte:</strong> Optimierung des Führungsstils und Förderung der Mitarbeiterbindung.</li>
+                    <li><strong>Teams:</strong> Steigerung der Zusammenarbeit und Produktivität.</li>
+                    <li><strong>Einzelpersonen:</strong> Persönliches Wachstum und Klarheit über berufliche Ziele.</li>
                 </ul>
                 
-                <p class="my-6 leading-relaxed">
+                <p>
                     HM bietet individuelle Birkman®-Analysen sowie Workshops für Teams an.
                 </p>
-                <p class="leading-relaxed">
+                <p>
                     <strong>Martin Hurni ist zertifizierter Birkman®-Berater</strong>, begleitet dich oder dein Team durch den Prozess und hilft dir, die Ergebnisse in die Praxis umzusetzen.
                 </p>
                 
-                <div class="text-center mt-12">
-                    <a href="#kontakt" class="inline-block bg-brand-orange text-white px-6 py-4 font-semibold text-base tracking-wide text-center hover:brightness-110 transition-all min-w-[250px]">
+                <div class="cta-row">
+                    <a href="#kontakt" class="cta-button">
                         Kontakt aufnehmen
                     </a>
                 </div>
@@ -120,18 +77,14 @@
         </section>
 
         <!-- Testimonial Section -->
-        <section class="py-16 md:py-24 px-4 md:px-8 bg-gray-100">
-            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-                    <img src="assets/2850e6f5-923a-4c50-a8d3-bcbc1b162ed6.webp" alt="Anna M., Teamleiterin" class="w-full h-full object-cover rounded-full">
-                </div>
-                <div class="flex-1 px-4">
-                    <blockquote class="relative italic text-lg md:text-xl leading-relaxed pl-6 pr-4">
-                        <span class="text-4xl absolute -left-2 -top-2 text-gray-400">«</span>
+        <section class="section section-tinted">
+            <div class="container-wide testimonial">
+                <img src="assets/2850e6f5-923a-4c50-a8d3-bcbc1b162ed6.webp" alt="Anna M., Teamleiterin" class="portrait portrait-round">
+                <div class="testimonial-body">
+                    <blockquote class="testimonial-quote">
                         Durch das Birkman-Profil habe ich ein tieferes Verständnis für meine Mitarbeiter gewonnen und konnte die Teamdynamik erheblich verbessern.
-                        <span class="text-4xl absolute -right-2 -bottom-4 text-gray-400">»</span>
                     </blockquote>
-                    <p class="text-right mt-6 text-gray-500 italic">
+                    <p class="testimonial-author">
                         — Anna M., Teamleiterin
                     </p>
                 </div>
@@ -139,35 +92,35 @@
         </section>
 
         <!-- Was ist Birkman Section -->
-        <section class="py-16 md:py-24 px-4 md:px-8">
-            <div class="max-w-4xl mx-auto">
-                <h3 class="text-xl font-semibold mt-8 mb-3">WAS IST BIRKMAN?</h3>
-                <p class="leading-relaxed">
+        <section class="section">
+            <div class="container prose">
+                <h3 class="section-heading">WAS IST BIRKMAN?</h3>
+                <p>
                     Die Birkman®-Methode ist eine der weltweit führenden Persönlichkeitsanalysen. Das Vorgehen ist wissenschaftlich fundiert. Es betrachtet die Persönlichkeit mehrdimensional. Einzigartig an der Birkman Methode ist, dass sie nicht nur Stärken und Verhalten, sondern auch Bedürfnisse einbezieht. Daraus können wichtige Erkenntnisse, sowohl für die individuelle Karriereplanung als auch für die Zusammenarbeit mit anderen Menschen und Vorgesetzten gewonnen werden. Die Fragebögen der Birkman®-Methode sind seit 1951 im Einsatz. Mehr als vier Millionen Menschen in über 8000 Unternehmen haben die Fragebögen ausgefüllt.
                 </p>
 
-                <h3 class="text-xl font-semibold mt-8 mb-3">ALLEINSTELLUNGSMERKMAL</h3>
-                <p class="leading-relaxed">
+                <h3 class="section-heading">ALLEINSTELLUNGSMERKMAL</h3>
+                <p>
                     Menschen haben unterschiedliche Bedürfnisse. Sie können mehrheitlich nicht vom äusseren Verhalten abgeleitet werden. Birkman macht die Bedürfnisse in verschiedenen Komponenten der Persönlichkeit sichtbar. Dieses Alleinstellungsmerkmal hat einen hohen Nutzen.
                 </p>
 
-                <h3 class="text-xl font-semibold mt-8 mb-3">WIE FUNKTIONIERT BIRKMAN?</h3>
-                <p class="leading-relaxed">
+                <h3 class="section-heading">WIE FUNKTIONIERT BIRKMAN?</h3>
+                <p>
                     Die Grundlage des Birkman® Profils ist ein web basierter Bogen mit 298 Fragen. In aussagekräftigen Berichten wird das menschliche Verhalten aufgezeigt und beschrieben. Dabei werden die einzigartigen Persönlichkeitsmerkmale mit einprägsamen Grafiken, Farben, Symbolen und Skalen dargestellt. Die Stärken einer Person werden sichtbar. Die Berichte ermutigen zum Weiterkommen. Die Aussagen werden wertschätzend formuliert. Auf übermässig kritische und vorverurteilende Formulierungen wird bewusst verzichtet.
                 </p>
 
-                <h3 class="text-xl font-semibold mt-8 mb-3">AUSWERTUNGSGESPRÄCH</h3>
-                <p class="leading-relaxed">
+                <h3 class="section-heading">AUSWERTUNGSGESPRÄCH</h3>
+                <p>
                     Nach dem Ausfüllen des Fragebogens findet ein 2-stündiges Auswertungsgespräch statt. Der Bericht «Birkman Signature» umfasst 31 Seiten. Weitere Schritte können bei Bedarf geplant werden. HM bietet Aufbaumodule, wie zum Beispiel das Teamprofil an.
                 </p>
 
-                <h3 class="text-xl font-semibold mt-8 mb-3">TEAMAUSWERTUNG</h3>
-                <p class="leading-relaxed">
+                <h3 class="section-heading">TEAMAUSWERTUNG</h3>
+                <p>
                     Neben der Einzelauswertung sind auch Gruppenprofile besonders spannend. Die Wahrnehmung der ganzen Gruppe kann sich dadurch positiv verändern und erweitern. Birkman zeigt die Ergänzungsbedürftigkeit jedes Menschen auf. Ergänzung setzt frei und macht das Team deutlich stärker. In diesem Licht verstaubt das Konkurrenzdenken.
                 </p>
 
-                <div class="text-center mt-12">
-                    <a href="#kontakt" class="inline-block bg-brand-orange text-white px-6 py-4 font-semibold text-base tracking-wide text-center hover:brightness-110 transition-all min-w-[250px]">
+                <div class="cta-row">
+                    <a href="#kontakt" class="cta-button">
                         Kontakt aufnehmen
                     </a>
                 </div>
@@ -175,51 +128,51 @@
         </section>
 
         <!-- Kontakt Section -->
-        <section id="kontakt" class="bg-brand-orange py-16 md:py-24 px-4 md:px-8">
-            <div class="max-w-5xl mx-auto">
-                <h1 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Kontakt aufnehmen</h1>
+        <section id="kontakt" class="section section-brand">
+            <div class="container-wide">
+                <h1 class="contact-title">Kontakt aufnehmen</h1>
                 
-                <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="contact-layout">
                     <!-- Left side - Image and text -->
-                    <div class="w-full md:w-1/2 text-center md:text-left">
-                        <img src="assets/MartinHurni-2.jpeg" alt="Martin Hurni" class="w-48 h-48 md:w-64 md:h-64 object-cover mx-auto md:mx-0 mb-6">
-                        <p class="text-white font-semibold text-lg mb-2">
+                    <div class="contact-intro">
+                        <img src="assets/MartinHurni-2.jpeg" alt="Martin Hurni" class="portrait">
+                        <p class="contact-lead">
                             Ich freue mich über Deine Nachricht!
                         </p>
-                        <p class="text-white">
+                        <p>
                             — Martin Hurni, Gründer und Happiness Manager
                         </p>
                     </div>
 
                     <!-- Right side - Form -->
-                    <form class="w-full md:w-1/2 space-y-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <label class="block text-white text-sm">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <label class="form-field">
                                 Vorname:
-                                <input type="text" name="vorname" class="mt-1 w-full p-3 bg-white text-brand-dark border-0 focus:ring-2 focus:ring-brand-dark focus:outline-none">
+                                <input type="text" name="vorname">
                             </label>
-                            <label class="block text-white text-sm">
+                            <label class="form-field">
                                 Name:
-                                <input type="text" name="name" class="mt-1 w-full p-3 bg-white text-brand-dark border-0 focus:ring-2 focus:ring-brand-dark focus:outline-none">
+                                <input type="text" name="name">
                             </label>
                         </div>
                         
-                        <label class="block text-white text-sm">
+                        <label class="form-field">
                             E-Mail-Adresse:
-                            <input type="email" name="email" class="mt-1 w-full p-3 bg-white text-brand-dark border-0 focus:ring-2 focus:ring-brand-dark focus:outline-none">
+                            <input type="email" name="email">
                         </label>
                         
-                        <label class="block text-white text-sm">
+                        <label class="form-field">
                             Betreff:
-                            <input type="text" name="betreff" class="mt-1 w-full p-3 bg-white text-brand-dark border-0 focus:ring-2 focus:ring-brand-dark focus:outline-none">
+                            <input type="text" name="betreff">
                         </label>
                         
-                        <label class="block text-white text-sm">
+                        <label class="form-field">
                             Deine Anfrage:
-                            <textarea name="nachricht" rows="8" class="mt-1 w-full p-3 bg-white text-brand-dark border-0 focus:ring-2 focus:ring-brand-dark focus:outline-none resize-none"></textarea>
+                            <textarea name="nachricht" rows="8"></textarea>
                         </label>
                         
-                        <button type="submit" class="inline-block bg-brand-dark text-white px-6 py-4 font-semibold text-base tracking-wide text-center hover:brightness-125 transition-all min-w-[250px]">
+                        <button type="submit" class="submit-button">
                             Absenden
                         </button>
                     </form>
@@ -228,7 +181,7 @@
         </section>
     </main>
 
-    <footer class="py-8 bg-white text-center text-gray-500 text-sm">
+    <footer class="site-footer">
         <p>© 2025 Happiness Manager. Alle Rechte vorbehalten.</p>
     </footer>
 </body></html>
