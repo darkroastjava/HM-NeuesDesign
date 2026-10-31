@@ -31,6 +31,7 @@
     --text-quote-mark: 2.25rem;
 
     --leading-relaxed: 1.625;
+    --leading-label: 1.3;
     --tracking-wide: 0.025em;
 
     --weight-medium: 500;
@@ -121,8 +122,8 @@ body, h1, h2, h3, p, blockquote, ul, li {
 
 body {
     font-family: var(--font-sans);
-    font-size: var(--text-lg);
-    line-height: var(--lh-lg);
+    font-size: var(--text-xl);
+    line-height: var(--leading-relaxed);
     color: var(--color-dark);
 }
 
@@ -279,7 +280,6 @@ h1 {
 
 .hero-panel p {
     margin-bottom: var(--space-4);
-    line-height: var(--leading-relaxed);
 }
 
 .hero-panel p:last-of-type {
@@ -292,10 +292,6 @@ h1 {
 }
 
 /* --- Fliesstext ---------------------------------------------------------- */
-
-.prose :where(p) {
-    line-height: var(--leading-relaxed);
-}
 
 /* Vertikaler Rhythmus: gleicher Abstand zwischen allen Geschwistern */
 .flow > :where(* + *) {
@@ -311,7 +307,6 @@ h1 {
 
 .list-intro {
     font-weight: var(--weight-medium);
-    line-height: var(--lh-lg);
 }
 
 .list-bulleted {
@@ -445,13 +440,16 @@ h1 {
 .form-field {
     display: block;
     color: var(--color-white);
-    font-size: var(--text-sm);
-    line-height: var(--lh-sm);
+    font-size: var(--text-base);
+    line-height: var(--leading-label);
+    font-weight: var(--weight-semibold);
 }
 
 .form-field input,
 .form-field textarea {
     width: 100%;
+    font-size: var(--text-lg);
+    font-weight: 400;
     margin-top: var(--space-1);
     padding: var(--space-3);
     background: var(--color-white);
